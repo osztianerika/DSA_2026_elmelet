@@ -45,6 +45,9 @@ char* getModeDescription(enum Mode mode);
 void readFishDetails(Fish_t *pFish);
 //egy hal adataink a kiiratasa
 void printFish(Fish_t fish);
+
+
+
 //helyfoglalas több halnak, tárolásuk egy tömbben
 void allocateMemoryForFishes(Fish_t **dpFishes, int numberOfFishes);
 //több hal adataink a beolvasása

@@ -6,6 +6,7 @@
 #define TOMB_STRUCT_FUNCTIONS_INTARRAY_H
 #include <stdlib.h>
 #include <stdio.h>
+#include <constants.h>
 typedef struct {
     int size;
     int capacity;

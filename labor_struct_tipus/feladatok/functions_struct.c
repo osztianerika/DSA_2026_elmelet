@@ -40,6 +40,36 @@ void printFish(Fish_t fish) {
     printf("\n%s %s %.2f %.2f %s %s",getTypeDescription(fish.type),fish.name,fish.size,fish.age,getEatDescription(fish.catch.eat),getModeDescription(fish.catch.mode));
 }
 
+void allocateMemoryForFishes(Fish_t **dpFishes, int numberOfFishes) {
+    *dpFishes = (Fish_t*)malloc(numberOfFishes * sizeof(Fish_t));
+    if (*dpFishes == NULL) {
+        printf(MEMORY_ALLOCATION_ERROR_MESSAGE);
+        exit(MEMORY_ALLOCATION_ERROR_CODE);
+    }
+}
+
+void readAllFishesDetails(Fish_t **dpFishes, int *pNumberOfFishes, const char *input) {
+   if(!freopen(input,"r",stdin)) {
+       printf(FILE_OPENING_ERROR_MESSAGE);
+       exit(FILE_OPENING_ERROR_CODE);
+   }
+    scanf("%d", pNumberOfFishes);
+    allocateMemoryForFishes(dpFishes, *pNumberOfFishes);
+    for (int i = 0; i < *pNumberOfFishes; i++) {
+        readFishDetails(&(*dpFishes)[i]);
+    }
+    freopen("CON", "r", stdin);
+}
+
+void printAllFish(Fish_t *pFishes, int numberOfFishes, const char *destination) {
+    freopen(destination, "w", stdout);
+    for (int i = 0; i < numberOfFishes; i++) {
+        printFish(pFishes[i]);
+    }
+    freopen("CON", "w", stdout);
+}
+
+
 
 
 
