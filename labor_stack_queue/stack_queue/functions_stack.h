@@ -1,0 +1,8 @@
+//
+// Created by Erika on 3/11/2026.
+//
+
+#ifndef STACK_QUEUE_FUNCTIONS_STACK_H
+#define STACK_QUEUE_FUNCTIONS_STACK_H
+
+#endif //STACK_QUEUE_FUNCTIONS_STACK_H
