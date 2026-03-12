@@ -4,6 +4,9 @@
 
 #ifndef STACK_QUEUE_FUNCTIONS_QUEUE_H
 #define STACK_QUEUE_FUNCTIONS_QUEUE_H
+#include <stdio.h>
+#include <stdlib.h>
+#include <constants.h>
 typedef struct {
     int capacity;
     int front;
