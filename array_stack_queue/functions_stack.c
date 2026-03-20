@@ -4,6 +4,8 @@
 
 #include "functions_stack.h"
 
+#include "constants.h"
+
 void createStack(int capacity, Stack_t *stack)
 {
     stack->capacity = capacity;
@@ -32,7 +34,7 @@ bool isEmpty(Stack_t stack) {
 
 void push(Stack_t *stack, int item) {
     if (isFull(*stack)) {
-        printf("Hiba! Tele van a stack!");
+        printf(FULL_MESSAGE);
         exit(-1);
     }
     stack->top++;
@@ -52,7 +54,7 @@ int pop(Stack_t *stack) {
 
 int peek(Stack_t stack) {
     if (isEmpty(stack)) {
-        printf("Ne peekelj ures stackbe!");
+        printf(EMPTY_MESSAGE);
         exit(-2);
     }
     return stack.elements[stack.top];
