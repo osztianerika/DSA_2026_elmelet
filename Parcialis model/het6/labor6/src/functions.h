@@ -93,7 +93,7 @@ Order_t dequeue(Queue_t* queue);
 * Kiírja a sor összes elemét.
 * @param queue - a sor struktúrája
 */
-void display(Queue_t queue);
+void displayQueue(Queue_t queue);
 
 /**
  *

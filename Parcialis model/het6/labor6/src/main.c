@@ -5,8 +5,9 @@
 int main(void)
 {
     Order_t order1, order2;
-    //readOneOrder(&order1);
-    //printOneOrder(order1);
+    freopen("eredmeny4_50.txt", "w", stdout);
+    // readOneOrder(&order1);
+    // printOneOrder(order1);
     if(!freopen("order_one.txt", "r", stdin))
     {
         printf(FILE_OPENING_ERROR_MESSAGE);
@@ -23,5 +24,26 @@ int main(void)
         1
     };
     printOneOrder(order3);
+    freopen("con", "w", stdout);
+
+    // 4.
+    freopen("orders.txt", "r", stdin);
+    int nrOrders = 0;
+    scanf("%d", &nrOrders);
+    Queue_t sor;
+    createQueue(100, &sor);
+    for(int i = 0; i < nrOrders; ++i)
+    {
+        Order_t tmp;
+        readOneOrder(&tmp);
+        enqueue(&sor, tmp);
+    }
+    displayQueue(sor);
+    if(isFullQueue(sor))
+    {
+        printf("Nem sikerult rogziteni %d rendelest.\n", nrOrders - sor.capacity);
+    }
+    else printf("Minden rendelest sikerult rogziteni.\n");
+    printf("BONUSZ: %.2f\n", calculateCourierBonus(sor, 10000.f));
     return 0;
 }

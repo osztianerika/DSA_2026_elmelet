@@ -1,6 +1,7 @@
 #include "functions.h"
 #include <stdio.h>
 #include <customs/constants.h>
+#include <stdlib.h>
 
 void readOneOrder(Order_t *order)
 {
@@ -43,12 +44,12 @@ void printOneOrder(Order_t order)
     else printf("Nincs kiszallitva\n");
 }
 
-/*void createQueue(int capacity, Queue_t *queue)
+void createQueue(int capacity, Queue_t *queue)
 {
     queue->capacity = capacity;
     queue->front = -1;
     queue->rear = -1;
-    queue->elements = (int*)calloc(capacity, sizeof(Order_t));
+    queue->elements = (Order_t*)calloc(capacity, sizeof(Order_t));
     if(!queue->elements)
     {
         printf("%s", MEMORY_ALLOCATION_ERROR_MESSAGE);
@@ -87,7 +88,7 @@ bool isEmptyQueue(Queue_t queue)
     return false;
 }
 
-void enqueue(Queue_t *queue, int item)
+void enqueue(Queue_t *queue, Order_t item)
 {
     if(!queue)
     {
@@ -110,7 +111,7 @@ void enqueue(Queue_t *queue, int item)
     }
 }
 
-int dequeue(Queue_t *queue)
+Order_t dequeue(Queue_t *queue)
 {
     if(!queue)
     {
@@ -123,7 +124,7 @@ int dequeue(Queue_t *queue)
         exit(DATA_STRUCTURE_EMPTY_ERROR_CODE);
     }
     
-    int save;
+    Order_t save;
     if(queue->front == queue->rear)
     {
         save = queue->elements[queue->front];
@@ -142,7 +143,24 @@ void displayQueue(Queue_t queue)
 {
     for(int i = queue.front; i <= queue.rear; ++i)
     {
-        printf("%i ", queue.elements[i]);
+        printOneOrder(queue.elements[i]);
     }
     printf("\n");
-}*/
+}
+
+double calculateCourierBonus(Queue_t queue, double minSumLimit)
+{
+    double onlinePenz = 0.f;
+    double keszpenzPenz = 0.f;
+    double osszPenz = 0.f;
+    while(!isEmptyQueue(queue))
+    {
+        Order_t curr = dequeue(&queue);
+        if(curr.kiszallitva == 0) continue;
+        osszPenz += (double)curr.ar;
+        if(curr.fizetesiMod == ONLINE) onlinePenz += (double)curr.ar;
+        else if(curr.fizetesiMod == KESZPENZ) keszpenzPenz += (double)curr.ar;
+    }
+    if(onlinePenz > keszpenzPenz && onlinePenz > minSumLimit) return osszPenz * .1f;
+    return 0.f;
+}
