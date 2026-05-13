@@ -9,7 +9,7 @@
 #define CAPACITY 13
 
 typedef struct {
-    Node *items[CAPACITY];
+    Node *items;
 }HashTable;
 
 /**
