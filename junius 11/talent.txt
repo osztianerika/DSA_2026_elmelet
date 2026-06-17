@@ -1,0 +1,157 @@
+52
+Kovacs Adam
+87
+0
+Nagy Beata
+93
+1
+Szabo Csaba
+76
+2
+Toth Diana
+99
+0
+Farkas Endre
+82
+1
+Molnar Ferenc
+91
+2
+Varga Gabriella
+68
+0
+Balogh Henrik
+74
+1
+Kiss Ilona
+88
+2
+Lakatos Jozsef
+95
+0
+Simon Karoly
+63
+1
+Papp Lilla
+79
+2
+Horvath Marton
+84
+0
+Biro Noemi
+97
+1
+Veres Oliver
+71
+2
+Jakab Petra
+89
+0
+Benedek Richard
+92
+1
+Szekely Sara
+77
+2
+Demeter Tamas
+65
+0
+Antal Vivien
+98
+1
+Miklos Aron
+81
+2
+Lazar Emese
+90
+0
+Fodor Gergely
+73
+1
+Kadar Hanna
+86
+2
+Racz Istvan
+94
+0
+Barta Julia
+78
+1
+Mate Zoltan
+69
+2
+Balogh Katalin
+96
+0
+Kelemen Levente
+83
+1
+Kiss Nora
+88
+2
+Sipos Attila
+72
+0
+Balla Renata
+97
+1
+Fazakas Botond
+80
+2
+Tamasi Evelin
+91
+0
+Vincze Gabor
+75
+1
+Orban Zsuzsa
+99
+2
+Csergo David
+84
+0
+Bokor Anita
+87
+1
+Puskas Roland
+66
+2
+Finta Timea
+95
+0
+Szilagyi Akos
+82
+1
+Lukacs Erika
+89
+2
+Bartha Hunor
+70
+0
+Kovari Kinga
+98
+1
+Gergely Andras
+85
+2
+Tamasi Zsofia
+92
+0
+Bencze Norbert
+74
+1
+Albert Eszter
+96
+2
+Dobra Mate
+81
+0
+Palfi Laura
+90
+1
+Fekete Peter
+67
+2
+Boros Tunde
+97
+0

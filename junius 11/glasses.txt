@@ -1,0 +1,109 @@
+36
+Atlatszo
+2.5
+0
+Kek Muanyag
+3.0
+1
+Feher Keramia
+2.2
+2
+Ezust Fem
+4.0
+3
+Sotetzold
+2.8
+0
+Piros Muanyag
+3.5
+1
+Sarga Keramia
+2.0
+2
+Fekete Fem
+4.5
+3
+Vilagoskek
+2.7
+0
+Narancssarga Muanyag
+3.2
+1
+Bordo Keramia
+2.4
+2
+Grafitszurke Fem
+4.2
+3
+Jegkek
+2.9
+0
+Zold Muanyag
+3.1
+1
+Elefantcsont Keramia
+2.3
+2
+Acelszurke Fem
+4.1
+3
+Atetszo Zold
+2.6
+0
+Lila Muanyag
+3.4
+1
+Kremszinu Keramia
+2.1
+2
+Bronz Fem
+4.3
+3
+Vilagosbarna
+2.8
+0
+Rozsaszin Muanyag
+3.0
+1
+Sotetbarna Keramia
+2.5
+2
+Titan Fem
+4.4
+3
+Tengerkek
+2.7
+0
+Citromsarga Muanyag
+3.3
+1
+Hamuszurke Keramia
+2.2
+2
+Matt Fekete Fem
+4.0
+3
+Kristalytiszta
+2.9
+0
+Neonzold Muanyag
+3.6
+1
+Hofeher Keramia
+2.4
+2
+Polirozott Fem
+4.5
+3
+Aquamarin
+2.6
+0
+Pasztellkek Muanyag
+3.2
+1
+Mentaszinu Keramia
+2.3
+2
+Rez Fem
+4.1
+3
